@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     padding: 0 33px;
   }
   @media screen and (max-width: 576px) {
@@ -45,8 +45,11 @@ body {
 .header {
   padding: 38px 0;
 
-  @media screen and (max-width: 768px) {
-    padding-bottom: 88px;
+  @media screen and (max-width: 992px) {
+    padding: 18px 0 68px 0;
+  }
+   @media screen and (max-width: 576px) {
+    padding: 18px 0;
   }
 }
 .logo {
@@ -58,6 +61,7 @@ body {
 /*------ HERO--------*/
 .hero {
   padding-bottom: 90px;
+
   &__title {
     font-family: v.$second-font-family;
     font-weight: 600;
@@ -67,23 +71,38 @@ body {
     color: v.$color-black;
     margin-bottom: 70px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       font-size: 1.74rem;
       line-height: 1.52;
+      margin-bottom: 50px;
+    }
+     @media screen and (max-width: 576px) {
+      font-size: 1.57rem;
+      line-height: 1.67;
+      margin-bottom: 40px;
     }
   }
   &__img {
     margin-bottom: 90px;
+    width: 100%;
+
+    @media screen and (max-width: 576px){
+      margin-bottom: 70px;
+    }
   }
   &__info {
     width: 570px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       width: 100%;
     }
 
     &-title {
       margin-bottom: 50px;
+
+      @media screen and (max-width: 576px){
+        margin-bottom: 40px;
+      }
     }
 
     &-text:not(:last-child) {
@@ -95,6 +114,10 @@ body {
 /*-------- SECTION------*/
 .section {
   padding-bottom: 90px;
+
+   @media screen and (max-width: 992px){
+    padding-bottom: 70px;
+   }
 
   &__title {
     margin-bottom: 50px;
@@ -123,7 +146,7 @@ body {
     align-items: center;
     margin-bottom: 20px;
 
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 992px) {
       flex-direction: column;
       gap: 40px;
     }
@@ -134,7 +157,7 @@ body {
   justify-content: space-between;
   gap: 23px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 992px) {
     margin-bottom: 40px;
   }
 
@@ -168,7 +191,7 @@ body {
   flex-direction: column;
   color: v.$color-black;
 
-   @media screen and (max-width: 768px){
+   @media screen and (max-width: 992px){
     align-items: center;
    }
 
